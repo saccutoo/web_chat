@@ -1,0 +1,13 @@
+@import "../../Styles/utils/variables.scss";
+
+.iconcirclepanel-container{
+  border-radius: 50%;
+  background-color: $neutral-porcelain;
+  display: flex;
+  cursor: pointer;
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}

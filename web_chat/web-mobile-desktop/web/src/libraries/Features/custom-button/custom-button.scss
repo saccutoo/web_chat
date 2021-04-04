@@ -1,0 +1,28 @@
+@import "../../../libraries/Styles/utils/variables.scss";
+
+.custombutton-container{
+  border-radius: $border-radius-base;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  font-weight: var(--fontweight-default2);
+}
+
+.primary{
+  background: $primary-blue;
+  color: $neutral-white;
+  border: 1px solid $neutral-white;
+}
+
+.default{
+  background: $neutral-white;
+  color: $neutral-regent-gray;
+  border: 1px solid $neutral-regent-gray;
+}
+
+.secondary{
+  background: $neutral-white;
+  color: $accent-dodger-blue;
+  border: none;
+}

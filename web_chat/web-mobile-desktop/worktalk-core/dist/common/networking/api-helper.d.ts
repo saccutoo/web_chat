@@ -1,0 +1,14 @@
+declare function fetch(url: string, params?: any, isAuth?: boolean, isRaw?: boolean): Promise<any>;
+declare function post(url: string, data?: any, isAuth?: boolean, isRaw?: boolean): Promise<any>;
+declare function postFile(url: string, data?: any, isAuth?: boolean): Promise<any>;
+declare function postTokenTest(url: string, body: any, isAuth?: boolean): Promise<any>;
+declare function postTokenFormDataTest(url: string, body: any, isAuth?: boolean): Promise<any>;
+declare function deletes(url: string, data?: any, isAuth?: boolean): Promise<any>;
+declare function put(url: string, data?: any, isAuth?: boolean): Promise<any>;
+declare function postFormData(url: string, body: any, isAuth?: boolean): Promise<any>;
+declare function postForm(url: string, data: any, isAuth?: boolean): Promise<any>;
+export declare function removeUser(): Promise<void>;
+export declare function checkToken(res: any): any;
+declare function processRequestRespository(reqPromise: Promise<any>, onSuccess?: (data?: any) => void, onfail?: (ex?: any, msg?: string) => void, isShowAlert?: boolean, isShowLoading?: boolean): void;
+declare function processRequestTrustRespository(reqPromise: Promise<any>, onSuccess?: (data?: any) => void, onfail?: (ex?: any, msg?: string) => void, isShowAlert?: boolean, isShowLoading?: boolean): void;
+export { fetch, post, postFile, put, postFormData, deletes, postForm, postTokenTest, postTokenFormDataTest, processRequestRespository, processRequestTrustRespository, };

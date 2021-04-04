@@ -1,0 +1,19 @@
+.datetime-container{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datetime-line{
+    height: 1px;
+    background-color:var(--color-main-border);
+    width: 40%;
+}
+
+.datetime-container span{
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-text--lightgray2);
+}

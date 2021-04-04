@@ -1,0 +1,76 @@
+@import "../../Styles/utils/variables.scss";
+
+.modal-container {
+  background-color: $neutral-white;
+  border-radius: $border-radius-base;
+  max-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .modal-header-bottomborder{
+    border-bottom: 1px solid var(--color-main-border);
+  }
+
+  .modal-header-container{
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .modal-header-content{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      color: $neutral-midnight;
+    }
+
+    .modal-header-close{
+      display: flex;
+      justify-content: center;
+    
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .modal-content-container{
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+.modal-overlay{
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+/* .modal-container > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal-container > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal-container > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal-container > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+} */
+

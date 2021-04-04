@@ -1,0 +1,53 @@
+@import "../../../Styles/utils/variables.scss";
+
+.detailpopup-detail{
+    list-style: none;
+
+    padding: 8px 0;
+
+    li{
+        display: flex;
+        align-items: center;
+        width: 187px;
+        height: 40px;
+        padding: 10px 0 10px 16px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $state-bg-1;
+        }
+
+        span{
+            margin-left: 12px;
+            color: $neutral-midnight;
+        }
+        
+    }
+}
+
+.detailpopup-header{
+    display: flex;
+    border-bottom: 1px solid var(--color-main-border);
+    padding: 0.4rem 0.6rem;
+    align-items: center;
+  
+    .detailpopup-header-right{
+        margin-left: 0.5rem;
+
+        p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;         
+            color: #1A2948;
+        }
+
+        span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;         
+            color: #4D5971;
+        }
+    }
+}

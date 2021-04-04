@@ -1,0 +1,59 @@
+@import "../utils/variables.scss";
+@import "../utils/mixin.scss";
+
+ul, ul li {
+    list-style-type: none;
+}
+
+.list-col {
+    @include mix-border-radius();
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 8px 0;
+    background-color: $neutral-white;
+    box-shadow: $shallow-shadow;
+
+    .list-col-row {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 8px 12px;
+        min-height: 32px;
+        color: $neutral-midnight;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $state-bg-1;
+        }
+    }
+
+    .active {
+        color: $primary-blue;
+    }
+
+    .list-text {
+        float: left;
+    }
+
+    .img-left {
+        img {
+            float: left;
+        }
+
+        .list-text {
+            padding-top: 2px;
+            padding-left: 8px;
+        }
+    }
+
+    .img-right {
+        img {
+            float: right;
+        }
+
+        .list-text {
+            padding-top: 2px;
+        }
+    }
+}

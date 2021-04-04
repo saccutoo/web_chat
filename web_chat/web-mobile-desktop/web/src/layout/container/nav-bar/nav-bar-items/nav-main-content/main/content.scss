@@ -1,0 +1,21 @@
+.content-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+@media only screen and (max-width: 768px) {
+  .content-container{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+  .content-container{
+    width: 78%;
+  }
+}

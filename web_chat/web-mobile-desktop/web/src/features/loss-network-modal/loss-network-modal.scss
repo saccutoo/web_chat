@@ -1,0 +1,17 @@
+@import "../../libraries/Styles/utils/variables.scss";
+
+.lossnetworkmodal-container{
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: $neutral-midnight;
+  z-index: 999;
+  padding:12px;
+  border-radius:$border-radius-base;
+  -webkit-border-radius:$border-radius-base;
+  -moz-border-radius:$border-radius-base;
+  -ms-border-radius:$border-radius-base;
+  -o-border-radius:$border-radius-base;
+}

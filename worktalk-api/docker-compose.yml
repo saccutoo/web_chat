@@ -1,0 +1,48 @@
+version: "3.7"
+services:
+  redis-pushstream:
+    image: redis:latest
+    restart: on-failure
+    expose:
+      - 6379
+    # ports:
+    #   - 6379:6379
+  redis-app:
+    image: redis:latest
+    restart: on-failure
+    expose:
+      - 6379
+    ports:
+      - 6379:6379
+  pushstream:
+    # image: g00ner1102/pushstream:v2
+    # restart: on-failure
+    # depends_on:
+    #   - redis-pushstream
+    # ports:
+    #   - 80:80
+    #   - 443:443
+
+    image: docker-repo:5500/pushstream:v3
+    restart: on-failure
+    depends_on:
+      - redis-pushstream
+    ports:
+      - 31000:80
+  appchat:
+    build:
+      context: .
+      dockerfile: Dockerfile-Test
+    restart: on-failure
+    depends_on:
+      - redis-pushstream
+      - redis-app
+      - pushstream
+    ports:
+      - 3001:3001
+  buysbox:
+    image: busybox
+    restart: on-failure
+    command: ping pushstream
+    command: ping redis-pushstream
+    command: ping redis-app

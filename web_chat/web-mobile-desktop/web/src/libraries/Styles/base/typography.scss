@@ -1,0 +1,353 @@
+@import "../utils/variables.scss";
+
+body, td {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+// Typography
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 54px;
+    color: $neutral-midnight;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 42px;
+    color: $neutral-midnight;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 36px;
+    color: $neutral-midnight;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 30px;
+    color: $neutral-midnight;
+}
+
+.subheading-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: $neutral-midnight;
+}
+
+.subheading-semibold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $neutral-midnight;
+}
+
+.subheading-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: $neutral-midnight;
+}
+
+.subheading-large-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: $neutral-midnight;
+}
+
+.body-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-midnight;
+}
+
+.body-bold-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $accent-dodger-blue;
+    text-decoration-line: underline;
+}
+
+.body-bold-error {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $semantic-error-persian-red;
+}
+
+.sub-heading-large-semibold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $neutral-midnight;
+}
+
+.body-semibold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-midnight;
+}
+
+.body-semibold-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $accent-dodger-blue;
+    text-decoration-line: underline;
+}
+
+.body-semibold-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $semantic-error-persian-red;
+}
+
+.body-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-midnight;
+}
+
+.body-regular-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $accent-dodger-blue;
+    text-decoration-line: underline;
+}
+
+.body-regular-error {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $semantic-error-persian-red;
+}
+
+.body-reglar-hinted {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-pale-sky;
+}
+
+.body-semibold-hinted {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-pale-sky;
+}
+
+.body-bold-hinted {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-pale-sky;
+}
+
+.subtitle-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-midnight;
+}
+
+.subtitle-bold-2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-fiord;
+}
+
+.subtitle-regular {
+    font-style: normal;
+    // font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-midnight;
+}
+
+.subtitle-regular-2 {
+    font-style: normal;
+    // font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-regent-gray;
+}
+
+.subtitle-regular-3 {
+    font-style: normal;
+    // font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-fiord;
+}
+
+.subtitle-hint {
+    font-style: normal;
+    // font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-pale-sky;
+}
+
+.button-large-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $primary-blue;
+}
+
+.button-large-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: $primary-blue;
+}
+
+.button-small-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $primary-blue;
+}
+
+.button-small-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: $primary-blue;
+}
+
+.button-error-large-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $semantic-error-persian-red;
+}
+
+.button-error-large-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: $semantic-error-persian-red;
+}
+
+.button-error-small-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $semantic-error-persian-red;
+}
+
+.button-error-small-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: $semantic-error-persian-red;
+}
+
+.button-error-large-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $neutral-white;
+}
+
+.button-error-large-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: $neutral-white;
+}
+
+.button-error-small-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $neutral-white;
+}
+
+.button-error-small-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: $neutral-white;
+}
+
+// Huy
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.avatar-circle-default {
+    width: $height-avatar !important;
+    height: $height-avatar !important;
+}
+
+a {
+    color: $accent-dodger-blue;
+}

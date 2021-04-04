@@ -1,0 +1,113 @@
+.currentchat-container {
+  width: 70%;
+  margin-left: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .currentchat-icon {
+    opacity: 0;
+  }
+
+  .maincontext {
+    align-items: center;
+    justify-content: flex-end;
+    // display: flex;
+
+    // display: flex;
+    max-width: 100%;
+
+    .currentchat-text {
+      color: white;
+      background: var(--color-main2);
+      border-radius: 16px 16px 4px 16px;
+      overflow: auto;
+      margin: 1px 0 1px auto;
+      max-width: 100%;
+      // width: fit-content;
+      // width: -moz-fit-content;
+      word-wrap: break-word;
+
+      &.currentchat-center {
+        border-radius: 16px 4px 4px 16px;
+      }
+      
+      &.currentchat-bottom {
+        border-radius: 16px 4px 16px 16px;
+      }
+
+      .chat-time {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ffffff;
+        float: right;
+        margin-left: 32px;
+        opacity: 0.6;
+      }
+
+      span {
+        color: var(--color-background);
+        opacity: 0.95;
+      }
+    }
+  }
+}
+
+.currentchat-container:hover .currentchat-icon,
+.currentchat-icon:hover {
+  opacity: 1;
+}
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .currentchat-container {
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media (min-width: 1700px) {
+  .currentchat-container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .currentchat-container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 2350px) {
+  .currentchat-container {
+    width: 45%;
+  }
+}
+
+@media (min-width: 4090px) {
+  .currentchat-container {
+    width: 35%;
+  }
+}
+
+@media (min-width: 5400px) {
+  .currentchat-container {
+    width: 25%;
+  }
+}

@@ -1,0 +1,116 @@
+@import "../utils/variables.scss";
+@import "../utils/mixin.scss";
+
+input[type=text],
+input[type=password] {
+    @include mix-border-radius();
+    width: 100%;
+    height: 36px;
+    border: 1px solid $neutral-athens-gray;
+    padding-left: 10px;
+    padding-right: 4px;
+    color: $neutral-midnight !important;
+}
+
+input[type=text],
+input[type=password]:hover, input:focus {
+    border: 1px solid $accent-dodger-blue;
+    outline: none;
+    color: $neutral-midnight !important;
+    @include mix-border-radius();
+}
+
+input[type=text],
+input[type=password]::placeholder {
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-gray-chateau;
+}
+
+input[type=text]:disabled {
+    border: 1px solid $neutral-athens-gray;
+    background-color: $neutral-porcelain;
+}
+
+input[type=password]:disabled {
+    border: 1px solid $neutral-athens-gray;
+    background-color: $neutral-porcelain;
+}
+
+.input-success {
+    input[type=text],
+    input[type=password] {
+        color: $semantic-success-jade-green;
+    }
+}
+
+.input-error {
+    input[type=text],
+    input[type=password] {
+        color: $semantic-error-persian-red;
+        border: 1px solid $semantic-error-persian-red;
+    }
+}
+
+.input-img-left {
+    position: relative;
+
+    
+    img {
+        position: absolute;
+        left: 16px;
+        margin-top: 10px;
+        width: 14px;
+        height: 14px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        padding-left: 32px;
+    }
+}
+
+.input-img-right {
+    position: relative;
+
+    img {
+        position: absolute;
+        right: 16px;
+        margin-top: 10px;
+        width: 14px;
+        height: 14px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        padding-right: 32px;
+    }
+    
+}
+
+textarea {
+    @include mix-border-radius();
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    border: 1px solid $neutral-athens-gray;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+textarea:hover, textarea:focus {
+    border: 1px solid $accent-dodger-blue;
+    outline: none;
+    @include mix-border-radius();
+}
+
+textarea::placeholder {
+    font-size: $font-size-base;
+    line-height: 21px;
+    color: $neutral-gray-chateau;
+}
+
+textarea:disabled {
+    border: 1px solid $neutral-athens-gray;
+    background-color: $neutral-porcelain;
+}

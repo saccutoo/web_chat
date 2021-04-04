@@ -1,0 +1,21 @@
+
+.groupnotichat-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: 1rem 0;
+
+    .circleavatar-container{
+        margin-bottom: 0.5rem;
+    }
+}
+
+.groupnotichat-content{
+    display: flex;
+}
+
+.groupnotichat-content-username{
+    font-weight: var(--fontweight-default2);
+    color: #33415C !important;
+}

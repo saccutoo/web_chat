@@ -1,0 +1,23 @@
+@import "../../Styles/utils/variables.scss";
+
+.Toastify__toast{
+    border-radius: 8px !important;
+    padding: 0px 4px !important;
+    min-height: 48px !important;
+
+    &.Toastify__toast--warning{
+        background: $semantic-waring-amber-yellow !important;
+    }
+
+    &.Toastify__toast--info {
+        background: $accent-dodger-blue !important;
+    }
+    &.Toastify__toast--success {
+        background: $semantic-success-jade-green !important;
+    }
+
+    &.Toastify__toast--error {
+        background: $semantic-error-sunset-red !important;
+    }
+}
+

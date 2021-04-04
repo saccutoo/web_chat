@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "jsx": "react",
+    "outDir": "dist/"
+  },
+  "ts-node": {
+    "files": true
+  },
+  "include": ["src/"],
+  "exclude": ["node_modules"]
+}

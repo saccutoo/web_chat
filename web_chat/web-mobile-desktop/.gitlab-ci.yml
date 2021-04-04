@@ -1,0 +1,53 @@
+stages:
+  - build-image
+  - deploy-app
+image: registry.hyperlogy.com/docker:latest
+services:
+  - name: docker:dind
+    entrypoint: ["env", "-u", "DOCKER_HOST"]  
+    command: ["dockerd-entrypoint.sh"] 
+variables:
+  DOCKER_TLS_CERTDIR: ""
+  IMAGE_NAME: webchat-test
+  CI_REGISTRY_IMAGE: registry.hyperlogy.com/webchat-dev
+  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_PIPELINE_ID
+  DEPLOY_FILE: "deploy-webchat.yaml"
+
+build-docker-image:
+  stage: build-image
+  script:
+    - cd web
+    - docker pull $CI_REGISTRY_IMAGE:builder || true
+    - docker build --pull --cache-from $CI_REGISTRY_IMAGE:builder --target builder -t $CI_REGISTRY_IMAGE:builder .
+    - docker build --pull --cache-from $CI_REGISTRY_IMAGE:builder -t $IMAGE_TAG .
+    - docker push $CI_REGISTRY_IMAGE:builder
+    - docker push $IMAGE_TAG
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "dev"
+
+deploy-app:
+  stage: deploy-app
+  before_script:
+    - apk --no-cache add git
+    - git config --global user.name "$GIT_AUTH_USERNAME"
+    - git config --global user.email "$GIT_AUTH_EMAIL"
+    - git config --global credential.helper store
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+    - ssh-keyscan -H 'git.hyperlogy.com' >> ~/.ssh/known_hosts
+    - git clone  git@git.hyperlogy.com:thuyethm/config-manager.git
+    
+    
+  script:
+    - cd config-manager/webchat
+    - sed -i "s/registry\.hyperlogy\.com\/webchat-dev\:.*/registry\.hyperlogy\.com\/webchat-dev\:$CI_PIPELINE_ID/g" $DEPLOY_FILE
+    - cat $DEPLOY_FILE
+    - git add .
+    - git commit -m "@$GITLAB_USER_LOGIN deploy $CI_PROJECT_NAME/$CI_COMMIT_BRANCH on $DEPLOY_BRANCH" -m " -  $CI_PROJECT_URL/commit/$CI_COMMIT_SHA" -m "$CI_COMMIT_MESSAGE"
+    - git push
+    - pwd
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "dev"

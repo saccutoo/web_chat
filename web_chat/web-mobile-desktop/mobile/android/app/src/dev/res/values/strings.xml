@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WorkTalk</string>
+    <string name="facebook_app_id">294649831660152</string>
+    <string name="fb_login_protocol_scheme">fb294649831660152</string>
+</resources>

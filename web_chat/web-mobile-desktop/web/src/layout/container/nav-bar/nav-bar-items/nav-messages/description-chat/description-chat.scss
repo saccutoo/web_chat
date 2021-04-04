@@ -1,0 +1,93 @@
+@import "../../../../../../libraries/Styles/utils/variables.scss";
+@import "../../../../../../libraries/Styles/utils/mixin.scss";
+
+.descriptionchat-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 11px;
+    max-width: 100%;
+    &:hover,
+    &--active {
+        background-color: $state-bg-1;
+    }
+
+    .descriptionchat-image {
+        padding-right: 12px;
+    }
+
+    .descriptionchat-context {
+        width: 78%;
+
+        .descriptionchat-context-top {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+
+            .descriptionchat-username {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
+                color: $neutral-midnight;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 60%;
+
+                &-unread {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $neutral-midnight;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 60%;
+                }
+            }
+
+            .descriptionchat-timeoflastmess {
+                margin-left: auto;
+            }
+        }
+
+        .descriptionchat-context-bottom {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            height: 21px;
+
+            &.unread:after {
+                content: "";
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #ff7f08;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+@media only screen and (max-width: 768px) {
+    .descriptionchat-container {
+        padding: 0.3rem 0;
+
+        .descriptionchat-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+        }
+
+        .descriptionchat-context {
+            display: none;
+        }
+    }
+}

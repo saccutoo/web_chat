@@ -1,0 +1,84 @@
+
+.filechat-container{
+    background: var(--color-item--active);
+    mix-blend-mode: normal;
+    border: 1px solid #B3B8C2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.filechat-maincontext{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0.5rem;
+
+    > .filechat-context {
+        > .app-mainfont {
+            > h5 {
+                font-size: 12px;
+                line-height: 18px;
+                color: #808999;
+            }
+        }
+    }
+}
+
+.filechat-context h5{
+    font-size: 14px;
+}
+
+
+.filechat-iconbutton{
+    display: flex;
+    padding: 0.5rem;
+
+    background-color: #EEF0F7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.text-name{
+    display: flex;
+}
+
+
+
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+/* WIDTH */
+
+
+@media only screen and (max-width: 600px) {
+    .filechat-container-image{
+        display: none;
+    }
+
+    .filechat-context h5{
+        width: 80px;
+    }
+}
+
+/* HEIGHT */
+
+
+@media only screen and (max-height: 500px) {
+    .filechat-container-image{
+        display: none;
+    }
+
+    .filechat-context h5{
+        width: 80px;
+    }
+}

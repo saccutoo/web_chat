@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "823061793407",
+    "firebase_url": "https://hyperchat-6135e.firebaseio.com",
+    "project_id": "hyperchat-6135e",
+    "storage_bucket": "hyperchat-6135e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823061793407:android:8a6a6d40b2f0a8ef220d4a",
+        "android_client_info": {
+          "package_name": "com.hyperlogy.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823061793407-rvbuegcm2omik78qjcjgbf5jpt7aa8se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXspAlvRweB7RuLnapmrngG_2Enx2aasw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823061793407-rvbuegcm2omik78qjcjgbf5jpt7aa8se.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823061793407-8bet2ru43pvcmpdknrl6ht7tf7sgd90e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hyperlogy.chat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823061793407:android:89d43882abb3235e220d4a",
+        "android_client_info": {
+          "package_name": "com.hyperlogy.worktalkv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823061793407-rt5q6n1cr11j8m52mp11lg142kd97b52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hyperlogy.worktalkv2",
+            "certificate_hash": "5b7bc8aa674dbce662836ef8e8c3ffcd17e9b105"
+          }
+        },
+        {
+          "client_id": "823061793407-rvbuegcm2omik78qjcjgbf5jpt7aa8se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXspAlvRweB7RuLnapmrngG_2Enx2aasw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823061793407-rvbuegcm2omik78qjcjgbf5jpt7aa8se.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823061793407-8bet2ru43pvcmpdknrl6ht7tf7sgd90e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hyperlogy.chat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+.searchfield-container {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: #fff;
+    top: 100px;
+    z-index: 999;
+    overflow: auto;
+    cursor: pointer;
+    .item-search {
+        display: flex;
+        align-items: center;
+        padding: 15px 10px;
+    }
+    .search-name {
+        margin-left: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1a2948;
+    }
+}

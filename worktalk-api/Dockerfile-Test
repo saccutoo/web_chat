@@ -1,0 +1,23 @@
+ARG NODE_VERSION=14
+
+
+FROM node:${NODE_VERSION}-slim as dependencies
+WORKDIR /chat_app
+
+
+# RUN apt-get update && apt-get install -y build-essential python
+# COPY package.json package-lock.json ./
+COPY package.json ./
+RUN npm install 
+RUN npm ci
+
+
+FROM node:${NODE_VERSION}-slim
+WORKDIR /chat_app
+
+COPY --from=dependencies /chat_app/node_modules node_modules
+COPY . .
+
+EXPOSE 3001
+
+CMD ["npm", "run", "serve:dev"]

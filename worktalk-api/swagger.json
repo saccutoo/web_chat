@@ -1,0 +1,82 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Swagger UI demo by hyperlogy",
+    "version": "3.0.0",
+    "title": "Swagger UI",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "phuongvv7892@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Users",
+      "description": "Everything about user"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Add new user",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "data",
+            "description": "New user info",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "phuong"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "12345678"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Create user success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "User 1"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  }
+}

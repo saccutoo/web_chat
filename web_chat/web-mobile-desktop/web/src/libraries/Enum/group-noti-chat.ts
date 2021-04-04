@@ -1,0 +1,7 @@
+export const ENUM_KIND_OF_GROUPNOTICHAT = {
+    CREATE_GROUP: "0",
+    ADD_MEMBER: "1",
+    MEMBER_GETOUT: "2",
+    KICK_MEMBER: "3",
+    MAKE_ADMIN: "4"
+}

@@ -1,0 +1,6 @@
+export const ENUM_KIND_OF_TOASTIFY = {
+    INTRODUCE:0,
+    WARNING:1,
+    SUCCESS:2,
+    ERROR:3
+}

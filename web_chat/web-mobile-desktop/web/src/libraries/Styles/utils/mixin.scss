@@ -1,0 +1,304 @@
+@import "../utils/variables.scss";
+
+@mixin subheading-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: $neutral-midnight;
+}
+
+@mixin subheading-semibold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $neutral-midnight;
+}
+
+@mixin subheading-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: $neutral-midnight;
+}
+
+@mixin subheading-large-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: $neutral-midnight;
+}
+
+@mixin body-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: $neutral-midnight;
+}
+
+@mixin body-bold-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: $accent-dodger-blue;
+    text-decoration-line: underline;
+}
+
+@mixin body-bold-error {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: $semantic-error-persian-red;
+}
+
+@mixin sub-heading-large-semibold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $neutral-midnight;
+}
+
+@mixin body-semibold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $neutral-midnight;
+}
+
+@mixin body-semibold-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $accent-dodger-blue;
+    text-decoration-line: underline;
+}
+
+@mixin body-semibold-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $semantic-error-persian-red;
+}
+
+@mixin body-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $neutral-midnight;
+}
+
+@mixin body-regular-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $accent-dodger-blue;
+    text-decoration-line: underline;
+}
+
+@mixin body-regular-error {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $semantic-error-persian-red;
+}
+
+@mixin body-reglar-hinted {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $neutral-pale-sky;
+}
+
+@mixin body-semibold-hinted {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $neutral-pale-sky;
+}
+
+@mixin body-bold-hinted {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: $neutral-pale-sky;
+}
+
+@mixin subtitle-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-midnight;
+}
+
+@mixin subtitle-regular {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-midnight;
+}
+
+@mixin subtitle-hint {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: $neutral-pale-sky;
+}
+
+@mixin button-large-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $primary-blue;
+}
+
+@mixin button-large-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: $primary-blue;
+}
+
+@mixin button-small-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $primary-blue;
+}
+
+@mixin button-small-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: $primary-blue;
+}
+
+@mixin button-error-large-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $semantic-error-persian-red;
+}
+
+@mixin button-error-large-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: $semantic-error-persian-red;
+}
+
+@mixin button-error-small-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $semantic-error-persian-red;
+}
+
+@mixin button-error-small-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: $semantic-error-persian-red;
+}
+
+@mixin button-error-large-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $neutral-white;
+}
+
+@mixin button-error-large-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: $neutral-white;
+}
+
+@mixin button-error-small-uppercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $neutral-white;
+}
+
+@mixin button-error-small-lowercase {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: $neutral-white;
+}
+
+@mixin mix-border-radius($radius: 8px) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin mix-border-radius-important($radius: 8px) {
+    border-radius: $radius !important;
+    -moz-border-radius: $radius !important;
+    -webkit-border-radius: $radius !important;
+    -ms-border-radius: $radius !important;
+    -o-border-radius: $radius !important;
+}
+
+@mixin mix-border-radius-4c($tl: 8px, $tr: 8px, $br: 8px, $bl: 8px) {
+    border-radius: $tl $tr $br $bl;
+    -moz-border-radius: $tl $tr $br $bl;
+    -webkit-border-radius: $tl $tr $br $bl;
+    -ms-border-radius: $tl $tr $br $bl;
+    -o-border-radius: $tl $tr $br $bl;
+}
+
+@mixin mix-border-radius-4c-important($tl: 8px, $tr: 8px, $br: 8px, $bl: 8px) {
+    border-radius: $tl $tr $br $bl !important;
+    -moz-border-radius: $tl $tr $br $bl !important;
+    -webkit-border-radius: $tl $tr $br $bl !important;
+    -ms-border-radius: $tl $tr $br $bl !important;
+    -o-border-radius: $tl $tr $br $bl !important;
+}

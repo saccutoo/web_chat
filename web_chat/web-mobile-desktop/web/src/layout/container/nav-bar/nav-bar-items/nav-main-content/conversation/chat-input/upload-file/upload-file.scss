@@ -1,0 +1,64 @@
+.uploadfile-container{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-width: 88px;
+    height: 88px;
+    position: relative;
+    z-index: 999;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    &.file{
+        min-width: 140px;
+    }
+
+    .uploadfile-main{
+        padding: 4px;
+        background: #E6E8EB;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        height: 100%;
+
+        div{
+            display: flex;
+        }
+
+        p{
+            white-space: nowrap; 
+            max-width: 80px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    
+    .uploadfile-icon-delete-panel{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: white;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: -10%;
+        top: -12%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+
+        &:hover{
+            background-color: rgb(224, 216, 216);
+        }
+
+        img{
+            object-fit: cover;
+        }
+    }
+}

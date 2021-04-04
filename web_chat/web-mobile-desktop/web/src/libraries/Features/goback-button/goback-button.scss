@@ -1,0 +1,22 @@
+.gobackbutton-container{
+    display: flex;
+    align-items: center;
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+// /* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+
+// /* WIDTH */
+
+@media only screen and (max-width: 600px) {
+    .gobackbutton-container span{
+        display: none;
+    }
+}

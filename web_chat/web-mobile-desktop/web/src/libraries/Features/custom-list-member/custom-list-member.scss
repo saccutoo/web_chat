@@ -1,0 +1,27 @@
+.customer-list-member {
+    height: auto;
+    max-height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 62px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background: #111111;
+    overflow:scroll;
+    .customer-list-member-item {
+        display: flex;
+        padding: 4px 2px;
+        &:hover{
+            background: #424242;
+        }
+        .customer-list-member-name{
+            padding: 8px;
+            color: #ffffff;
+            cursor: pointer;
+            &:hover{
+                color:  rgb(5, 123, 170);
+            }
+        }
+    }
+    
+}

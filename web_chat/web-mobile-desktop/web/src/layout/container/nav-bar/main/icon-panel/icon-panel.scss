@@ -1,0 +1,77 @@
+.navbar-iconpanel-container {
+    height: 100%;
+    padding: 12px 0;
+    position: relative;
+
+    &:hover {
+        background-color: var(--color-main4);
+    }
+
+    &--active {
+        background-color: var(--color-main4);
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background-color: var(--color-main3);
+            border-radius: 0 5px 5px 0;
+            -webkit-border-radius: 0 5px 5px 0;
+            -moz-border-radius: 0 5px 5px 0;
+            -ms-border-radius: 0 5px 5px 0;
+            -o-border-radius: 0 5px 5px 0;
+        }
+    }
+    // quyennq : css thông báo
+
+    .navbar-iconpanel-icon {
+        position: relative;
+        
+        .has-notification {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: #ff4d54;
+            top: -3.5px;
+            right: -3.5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 16px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+
+    .navbar-iconpanel-icon {
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+@media only screen and (max-width: 768px) {
+    .navbar-iconpanel-container {
+        flex: 1;
+
+        &--active {
+            background-color: var(--color-main4);
+            border-left: none;
+            border-bottom: 2px solid var(--color-main3);
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

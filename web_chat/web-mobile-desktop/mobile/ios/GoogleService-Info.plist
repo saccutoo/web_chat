@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>823061793407-p6n7qhd0l20ijknmiqj8v4mq206t4ba4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.823061793407-p6n7qhd0l20ijknmiqj8v4mq206t4ba4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>823061793407-7smqgpg252ncau2hesibts95c2svaper.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC4LqpDWHfKA84c13VVrhDg5XctdfbW7Wo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>823061793407</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hyperlogy.worktalkv2</string>
+	<key>PROJECT_ID</key>
+	<string>hyperchat-6135e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hyperchat-6135e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:823061793407:ios:a46085c17795b78d220d4a</string>
+	<key>DATABASE_URL</key>
+	<string>https://hyperchat-6135e.firebaseio.com</string>
+</dict>
+</plist>

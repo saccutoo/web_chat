@@ -1,0 +1,99 @@
+.imagechat-container {
+    margin-bottom: 2px;
+
+    &.imagechat-current {
+        text-align: right;
+    }
+
+    img {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        width: 96px;
+        height: 96px;
+        margin: 2px 2px 0 2px;
+        object-fit: cover;
+        background: rgb(215, 228, 226);
+}
+}
+
+.view-file {
+
+    &-container {
+        background: rgba(238, 240, 247, 0.25);
+        border: 1px solid #b3b8c2;
+        box-sizing: border-box;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        display: flex;
+        padding: 10px;
+        width: 330px;
+}
+
+    &-name {
+        margin-left: 15px;
+        text-align: left;
+
+        > div{
+            display: flex;
+        }
+
+        p {
+            white-space: nowrap;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &-download {
+        width: 36px;
+        height: 36px;
+        background-color: #eef0f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-left: auto;
+    }
+}
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+@media only screen and (max-width: 768px) {
+    .view-file {
+        
+        &-container {
+            width: 100%;
+        }
+
+        &-name {
+            margin-left: 15px;
+            text-align: left;
+
+            > div{
+                display: flex;
+            }
+
+            p {
+                white-space: nowrap;
+                max-width: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &-download {
+            display: none;
+        }
+    }
+}

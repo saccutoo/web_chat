@@ -1,0 +1,3 @@
+export const ENUM_KIND_OF_MESSAGE_TYPE = {
+    VIDEO_CALL :"VIDEO_CALL"
+}

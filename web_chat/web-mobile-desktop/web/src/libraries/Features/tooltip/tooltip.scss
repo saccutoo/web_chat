@@ -1,0 +1,13 @@
+@import "../../Styles/utils/variables.scss";
+
+.tooltip-container{
+    background-color: $neutral-midnight;
+    padding: 0.5rem;
+    color: #E5E9F2;
+    border-radius: 6px;
+}
+
+.popup-arrow {
+    color: $neutral-midnight;
+}
+

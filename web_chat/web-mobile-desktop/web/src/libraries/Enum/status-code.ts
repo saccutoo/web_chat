@@ -1,0 +1,3 @@
+export const ENUM_KIND_OF_STATUS_CODE = {
+    SUCCESS:200
+}

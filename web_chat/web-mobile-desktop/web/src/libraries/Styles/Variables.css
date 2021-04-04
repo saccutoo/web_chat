@@ -1,0 +1,52 @@
+:root{
+    --color-item--active:#EEF0F7;
+    --color-background:#ffffff;
+    --color-background2:#F2F3F4;
+    --color-main:#115DD3;
+    --color-main2:#4080FF;
+    --color-main3:#FF7F08;
+    --color-main4:#0151CD;
+    --color-text--dark:#1A2948;
+    --color-text--gray:#4D5971;
+    --color-text--lightgray:#667085;
+    --color-text--lightgray2:#808999;
+    --color-main-border:#E6E8EB;
+} 
+
+:root{
+    --height-header-conversationdetail: 60px;
+    --height-notification-container: 95px;
+    --height-skeleton-navbardetail: 21px;
+}
+
+:root{
+    --width-navbardetail: 329px;
+    --width-navbar: 72px;
+}
+
+:root{
+    --fontsize-default: 14px;
+    --fontsize-default2: 16px;
+    --fontsize-default3: 12px;
+    --fontsize-default4: 18px;
+}
+
+:root{
+    --lineheight-default: 21px;
+    --lineheight-default2: 23px;
+    --lineheight-default3: 18px;
+    --lineheight-default4: 27px;
+}
+
+:root{
+    --fontfamily-default: Roboto;
+}
+
+:root{
+    --fontstyle-default: normal;
+}
+
+:root{
+    --fontweight-default: normal;
+    --fontweight-default2: 500;
+}

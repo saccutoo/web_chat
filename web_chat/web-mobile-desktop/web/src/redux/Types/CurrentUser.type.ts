@@ -1,0 +1,2 @@
+export const GET_CURRENTUSER = "GET_CURRENTUSER";
+

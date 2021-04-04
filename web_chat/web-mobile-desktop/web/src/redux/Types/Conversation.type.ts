@@ -1,0 +1,2 @@
+export const SHOW_CONVERSATION = "SHOW_CONVERSATION";
+

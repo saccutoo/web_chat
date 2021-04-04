@@ -1,0 +1,66 @@
+@import "../../Styles/utils/variables.scss";
+
+.notification-context2 {
+    width: 160px;
+    height: $height-skeleton-navbardetail;
+}
+
+.notification-time2{
+    display: block;
+    margin-top: 0.6rem;
+    width: 60px;
+    height: $height-skeleton-navbardetail;
+}
+
+.descriptionchat-icon-unread2{
+    width: $height-skeleton-navbardetail;
+    height: $height-skeleton-navbardetail;
+}
+
+.descriptionchat-timeoflastmess2{
+    width: 40px;
+    height: $height-skeleton-navbardetail;
+    margin-left: auto;
+}
+
+.descriptionchat-image2{
+    margin-right: 12px;
+}
+
+.descriptionchat-username2{
+    width: 100px;
+    height: $height-skeleton-navbardetail;
+}
+
+.descriptionchat-groupchat2{
+    width: 30px;
+    height: $height-skeleton-navbardetail;
+    margin-left: 0.5rem;
+}
+
+.descriptionchat-image2{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.skeleton-creategroup-container{
+    padding: 12px 0 !important;
+
+    .descriptionchat-image2{
+        margin: 0 !important;
+    }
+
+    .descriptionchat-context{
+
+        .descriptionchat-context-top{
+            height: 0px !important;
+        }
+
+        .descriptionchat-context-bottom{
+            margin-left: 8px;
+        }
+    }
+
+
+}

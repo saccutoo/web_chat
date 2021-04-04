@@ -1,0 +1,8 @@
+
+web/yarn.lock
+*.swp
+package-lock.json
+yarn.lock
+worktalk-core/node_modules
+worktalk-core/package-lock.json
+web/src/react-app-env.d.ts

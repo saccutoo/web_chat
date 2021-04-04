@@ -1,0 +1,37 @@
+.guidedtour-container{
+    background-color: #fff;
+    position: relative;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+
+    .guidedtour-closebutton{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+    }
+    
+    .guidedtour-buttonfield{
+        display: flex;
+        justify-content:center;
+    }
+    
+    .guidedtour-stepincenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+}
+
+.__floater__open + span{
+    display: none !important;
+}
+  
+.react-joyride__spotlight{
+    background-color: rgba(255, 255, 255, .15) !important;  
+    backdrop-filter: blur(5px);
+}

@@ -1,0 +1,29 @@
+{
+  "configId": {
+    "nodeServer": "001",
+    "objTable": {
+      "users": "00a",
+      "devices": "002",
+      "chat_rooms": "003",
+      "chats": "004",
+      "attachments": "005",
+      "chat_room_members": "006",
+      "notifications": "007"
+    }
+  },
+  "serverFile": {
+    "baseUrl": "http://172.20.80.19:9002",
+    "isUseDefaultName": "False",
+    "subFolderPath": "IHCM/AppChat"
+  },
+  "consul": {
+    "host": "172.20.80.53",
+    "serviceName": "WorkTalk",
+    "port": "8500"
+  },
+  "elasticSearch": {
+    "node": "http://172.20.80.130:9200",
+    "index": "work-talk",
+    "mapppingType": "app-chat"
+  }
+}

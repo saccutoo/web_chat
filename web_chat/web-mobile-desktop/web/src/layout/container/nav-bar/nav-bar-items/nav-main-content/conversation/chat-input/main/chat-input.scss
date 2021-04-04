@@ -1,0 +1,95 @@
+@import "../../../../../../../../libraries/Styles/utils/variables.scss";
+
+.chatinput-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6rem;
+  display: flex;
+  border-top: 1px solid var(--color-main-border);
+  background-color: var(--color-background);
+  min-height: 60px;
+
+  .custominput-container {
+    flex-grow: 1; /* default 0 */
+    margin: 0 1rem;
+  }
+}
+
+.chatinput-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .emoji-mart {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+
+    .emoji-mart-search-icon {
+      display: none;
+    }
+
+    .emoji-mart-scroll {
+      padding: 0 !important;
+    }
+
+    button {
+      height: auto !important;
+      min-width: 0 !important;
+      width: auto !important;
+    }
+
+    button:hover {
+      background: none;
+    }
+
+    button:focus {
+      background: none;
+    }
+  }
+
+  .icon-emoji {
+    position: absolute;
+    right: 70px;
+    cursor: pointer;
+  }
+}
+
+.chatinput-responseMess {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  position: relative;
+
+  > div{
+    width: 100%;
+  }
+
+  &-icon-cancel {
+    // align-self: flex-start;
+    position: absolute;
+    right: 0;
+  }
+
+  &-context {
+    width: 90%;
+  }
+}
+
+.chatinput--hasresponseMess {
+  flex-direction: column;
+}
+
+.chatinput-uploadfiles {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+
+  > div{
+    margin-right: 16px;
+  }
+}

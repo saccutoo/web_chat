@@ -1,0 +1,28 @@
+.descriptionchatlist-bottom {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  &:hover {
+    overflow: overlay;
+  }
+}
+
+.searchinput-container {
+  margin: 10px;
+}
+
+/* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+/* WIDTH */
+
+@media only screen and (max-width: 768px) {
+  .descriptionchatlist-top {
+    min-height: var(--height-header-conversationdetail) !important;
+
+    .searchinput-container {
+      display: none;
+    }
+  }
+}

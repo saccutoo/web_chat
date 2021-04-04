@@ -1,0 +1,1 @@
+find ./ -type f -name "*.gradle" | xargs grep -Eirl "\bcompile " | xargs sed -r -i 's/compile /implementation /'

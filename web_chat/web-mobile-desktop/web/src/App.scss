@@ -1,0 +1,59 @@
+@import url("./libraries/Styles/Variables.css");
+@import "./libraries/Styles/utils/mixin.scss";
+@import "./libraries/Styles/utils/variables.scss";
+@import "./libraries/Styles/base/typography.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100% ;
+  scroll-behavior: smooth;
+
+  // font-size: var(--fontsize-default);
+  // line-height: var(--lineheight-default);
+  // font-family: var(--fontfamily-default);
+  // font-style: var(--fontstyle-default);
+  // font-weight: var(--fontweight-default);
+  // color: var(--color-text--dark);
+}
+
+input[placeholder] { 
+  text-overflow: ellipsis; 
+}
+
+
+/* ------------------------------------------------ CUSTOM DEPENDENCIES  ----------------------- */
+
+
+/* ------------------------------------------------ CUSTOM SCROLL ----------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(116, 115, 115); 
+}
+
+#popup-root .popup-overlay{
+  pointer-events: none !important;
+}

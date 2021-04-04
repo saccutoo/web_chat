@@ -1,0 +1,21 @@
+.body-right-information{
+    min-width: var(--width-navbardetail);
+    height: 100%;
+    border-right: 1px solid var(--color-main-border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1080px) {
+    .body-right-information{
+        min-width: unset;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .body-right-information{
+        width: 60px !important;
+    }
+}

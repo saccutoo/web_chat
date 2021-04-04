@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "jsx": "react",
+        "lib": ["es6"],
+        "moduleResolution": "node",
+        "noEmit": true,
+        "strict": true,
+        "target": "esnext",
+        "baseUrl": "." /* Base directory to resolve non-absolute module names. */,
+        "paths": {
+            "*": ["src/*"],
+            "__tests__": ["__tests__/*"],
+            "core": ["src/core/*"],
+            "features": ["src/features/*"],
+            "configs": ["src/configs/*"],
+            "helpers": ["src/helpers/*"],
+            "libraries": ["src/libraries/*"],
+            "networking": ["src/core/common/networking/*"],
+            "reduxs": ["src/core/common/redux/*"],
+            "res": ["src/res/*"],
+            "routers": ["src/routers/*"],
+            "types": ["src/types/*"]
+        },
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules",
+        "babel.config.js",
+        "metro.config.js",
+        "src/__tests__/jest.config.js",
+        "src/__tests__",
+        "rn-cli.config.js",
+        "dist"
+    ]
+}

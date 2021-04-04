@@ -1,0 +1,101 @@
+{
+  "app": {
+    "name": "App Base"
+  },
+  "login": {
+    "labEmail": "Email",
+    "labPass": "Mật khẩu",
+    "lblUsername": "Nhập email công ty bạn",
+    "lblPass": "Nhập mật khẩu",
+    "btnLogin": "Đăng nhập"
+  },
+  "common": {
+    "yes": "Đồng ý",
+    "no": "Không",
+    "cancel": "Huỷ"
+  },
+  "warning": {
+    "errServer": "Có lỗi từ server",
+    "title": "Cảnh báo"
+  },
+  "netInfo": {
+    "noInternetConnection": "Không có kết nối Internet",
+    "checkInternetConnection": "Vui lòng kiểm tra lại kết nối mạng",
+    "openSetting": "Mở Cài Đặt"
+  },
+  "tabBar": {
+    "chat": "Trò chuyện",
+    "groupChat": "Thành viên"
+  },
+  "userChat": {
+    "title": "WorkTalk"
+  },
+  "search": {
+    "title": "Search",
+    "searchUser": "Tìm kiếm thành viên",
+    "search": "Tìm kiếm",
+    "enterSearch": "Nhập nội dung cần tìm kiếm",
+    "empty": "Không tìm thấy kết quả"
+  },
+  "logout": {
+    "content": "Bạn có muốn đăng xuất không?",
+    "txtLogout": "ĐĂNG XUẤT"
+  },
+  "createGr": {
+    "titleCreateGr": "Tạo nhóm mới",
+    "nameGr": "Nhập tên nhóm",
+    "txtCreateGr": "Tạo nhóm chat mới",
+    "choseMember": "CHỌN THÀNH VIÊN",
+    "addMember": "Thêm thành viên"
+  },
+  "newMess": {
+    "newMess": "Tin nhắn mới"
+  },
+  "profile": {
+    "version": "Phiên bản"
+  },
+  "videoCall": {
+    "inComing": "Đang gọi tới",
+    "outGoing": "Đang gọi...",
+    "cancel": "Từ chối",
+    "rep": "Trả lời",
+    "titleIncomingCall": "Cuộc gọi đến",
+    "titleOutGoingCall": "Cuộc gọi đi"
+  },
+  "chatDetail": {
+    "chooseFile": "Chọn File",
+    "online": "Đang online",
+    "offline": "Không hoạt động",
+    "hi": "Nhấn để xin chào"
+  },
+  "error": {
+    "errorEmail": "Email không được để trống",
+    "errorPass": "Mật khẩu không được để trống",
+    "mesSys": "Thông báo",
+    "errDes": "Có lỗi xảy ra trong quá trình truy xuất thông tin"
+  },
+  "actionMessage": {
+    "titleRemoveMessage": "Xoá tin nhắn"
+  },
+  "inputDomain": {
+    "title": "Nhập tên miền",
+    "lable": "Tên miền",
+    "placeHoder": "Nhập tên miền",
+    "errorInput": "Tên miền không được để trống",
+    "txtBtn": "Tiếp tục",
+    "error": "Tên miền không chính xác"
+  },
+  "actionMenu": {
+    "answer": "Trả lời",
+    "edit": "Chỉnh sửa",
+    "copy": "Sao chép",
+    "remove": "Xóa"
+  },
+  "notifi": {
+    "noti": "Thông báo"
+  },
+  "message": {
+    "answered": "đã trả lời",
+    "you": "Bạn"
+  }
+}

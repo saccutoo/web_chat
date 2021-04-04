@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+#apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: appchat # Unique name for the deploymenta
+  namespace: chat-backend-dev
+  labels:
+    app: appchat      # Labels to be applied to this deployment
+spec:
+  selector:
+    matchLabels:     # This deployment applies to the Pods matching these labels
+      app: appchat
+  replicas: 1        # Run a single pod in the deployment
+  template:          # Template for the pods that will be created by this deployment
+    metadata:
+      labels:        # Labels to be applied to the Pods in this deployment
+        app: appchat
+    spec:            # Spec for the container which will be run inside the Pod.
+      volumes:
+        - name: file-upload
+          persistentVolumeClaim:
+            claimName: datachat-backend
+        
+      containers:
+      - name: master
+        image: docker-repo:5500/chat_app_backend_dev:abc123
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "800Mi"
+            cpu: "800m"
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 32001
+        volumeMounts:
+          - mountPath: /uploads
+            name: file-upload
+#---
+#apiVersion: v1
+#kind: Service        # Type of Kubernetes resource
+#metadata:
+#  name: appchat # Name of the Kubernetes resource
+#  namespace: chat-backend-dev
+#  labels:            # Labels that will be applied to this resource
+#    app: appchat
+#spec:
+#  type: NodePort
+#  ports:
+#  - nodePort: 32001   # Map incoming connections on port 30000 to the target port 9000 of the Pod
+#    port: 32001
+#    targetPort: 32001
+#  selector:          # Map any Pod with the specified labels to this service
+#    app: appchat
+# ---
+# apiVersion: autoscaling/v1
+# kind: HorizontalPodAutoscaler
+# metadata:
+#   name: autoscale-appchat
+#   namespace: chat-backend-dev
+# spec:
+#   maxReplicas: 10
+#   minReplicas: 2
+#   scaleTargetRef:
+#     apiVersion: apps/v1
+#     kind: Deployment
+#     name: appchat
+#   targetCPUUtilizationPercentage: 80

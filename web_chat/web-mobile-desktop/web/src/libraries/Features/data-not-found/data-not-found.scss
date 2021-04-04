@@ -1,0 +1,59 @@
+@import "../../Styles/utils/variables.scss";
+
+.datanotfound-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    &.datanotfound-container--isposition{
+        position: absolute;
+        top: 0;
+    }
+
+    .datanotfound-main{
+        position: relative;
+
+        .datanotfound-main--textcenter{
+            position: absolute;
+            top: -160px;
+        }
+    }
+    > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .datanotfound-icon{
+            width:180px;
+            height:160px;
+            background-repeat: no-repeat;
+        }
+    
+        span{
+            margin-top: 1rem;
+            font-weight: var(--fontweight-default2);
+            font-size: 18px;
+            line-height: var(--lineheight-default2);
+            text-align: center;
+            color: $neutral-fiord;
+        }
+    }
+}
+
+// /* ------------------------------------------------ RESPONSIVE ----------------------- */
+
+
+@media only screen and (max-height:510px){ 
+    .datanotfound-container{
+        position: initial;
+    }
+}
+
+@media only screen and (max-width:860px){ 
+    .datanotfound-container{
+        display: none;
+    }
+}
